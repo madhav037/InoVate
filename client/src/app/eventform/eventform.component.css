@@ -1,0 +1,107 @@
+.eventForm {
+	position: fixed;
+	height: 80%;
+	width: 87%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 12px;
+	background-image: url(../../assets/event-forms-background.jpeg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow: hidden;
+}
+
+.eventForm>form {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	padding: 10px;
+}
+
+.eventForm>form>div {
+	height: 16.4%;
+	width: 100%;
+}
+
+.eventForm>form>div>div {
+	align-items: center;
+}
+
+.eventForm>form>div>div input {
+	width: 60%;
+}
+
+.eventForm>form .big {
+	height: 33%;
+}
+
+.eventForm>form .submit-button {
+	height: 14.4%;
+	justify-content: end;
+	align-items: center;
+}
+
+.eventForm>form .submit-button button {
+	height: 60%;
+	width: 18%;
+	border-radius: 20px;
+	font-size: 20px;
+}
+
+._svg {
+	margin-left: -15px;
+	height: 100%;
+	width: 2.7%;
+}
+
+label {
+	font-size: 14px;
+}
+
+.special_calender::-webkit-calendar-picker-indicator {
+	color: rgba(0, 0, 0, 0);
+	opacity: 1;
+	display: block;
+	background: url(../../assets/calender.svg) no-repeat;
+	width: 20px;
+	height: 20px;
+	border-width: thin;
+}
+
+._calender::-webkit-calendar-picker-indicator {
+	color: rgba(0, 0, 0, 0);
+	opacity: 1;
+	display: block;
+	background: url(../../assets/calender_special.svg) no-repeat;
+	width: 20px;
+	height: 20px;
+	border-width: thin;
+}
+
+input[type="text"],
+input[type="url"],
+input[type="date"],
+input[type="file"] {
+	margin-left: 25px;
+	background-color: transparent;
+	outline: none;
+	border-bottom: 1px;
+	border-color: black;
+	border-style: solid;
+	color: black;
+}
+
+.conditional_item {
+	display: flex;
+	align-items: start;
+	flex-direction: column;
+	gap: 10px;
+	font-size: 12px;
+}
+
+.conditional_item>div {
+	display: flex;
+	align-items: center;
+	justify-content: start;
+}

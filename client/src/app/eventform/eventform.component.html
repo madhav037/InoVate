@@ -1,0 +1,67 @@
+<div class="container eventForm">
+	<form>
+		<div class="mb-1">
+			<div class="float-left h-full w-1/2 p-1 px-2 flex">
+				<label for="event_name">EVENT NAME</label>
+				<input type="text" id="event_name" name="event_name" />
+			</div>
+			<div class="float-left h-full w-1/2 p-1 px-2 flex">
+				<label for="event_image">IMAGE</label>
+				<input type="file" id="event_image" name="event_image" />
+				<img src="../../assets/image.svg" class="_svg"/>
+			</div>
+		</div>
+		<div class="mb-1">
+			<div class="float-left h-full w-1/2 p-1 px-2 flex">
+				<label for="event_description">EVENT DESCRIPTION</label>
+				<input type="text" id="event_description" name="event_description" />
+			</div>
+			<div class="float-left h-full w-1/2 p-1 px-2 flex">
+				<label for="reg_start_date">REG. START DATE</label>
+				<input class="special_calender" type="date" id="reg_start_date" name="reg_start_date" />
+			</div>
+		</div>
+		<div class="mb-1">
+			<div class="float-left h-full w-1/2 p-1 px-2 flex">
+				<label for="event_start_date">EVENT START DATE</label>
+				<input class="_calender" type="date" id="event_start_date" name="event_start_date" />
+			</div>
+			<div class="float-left h-full w-1/2 p-1 px-2 flex">
+				<label for="reg_end-date">REG. END DATE</label>
+				<input class="special_calender" type="date" id="reg_end-date" name="reg_end-date" />
+			</div>
+		</div>
+		<div class="mb-1 big">
+			<div class="float-left h-full w-1/2">
+				<div class="w-full mb-2 h-1/2 flex items-center content-start">
+					<label for="event_end_date">EVENT END DATE</label>
+					<input class="_calender" type="date" name="event_end_date" id="event_end_date" />
+				</div>
+				<div class="w-full mb-2 h-1/2 flex items-center content-start">
+					<label for="event_location">EVENT LOCATION</label>
+					<input type="url" name="event_location" id="event_location" />
+					<img class="_svg" src="../../assets/location.svg" />
+				</div>
+			</div>
+			<div class="float-left h-full w-1/2">
+				<div class="w-full h-1/5 flex items-center ps-3"><span>ALLOW TEAMS? </span></div>
+				<div *ngIf="isTeam==true" class="block w-full ms-3 h-4/5 ps-5 conditional_item">
+					<div class="w-full h-2/5 mt-2">
+						<label for="no_team" class="uppercase float-left">Number of team</label>
+						<input type="text" class="float-left inner" name="no_team " id="no_team" />
+					</div>
+					<div class="w-full h-2/5">
+						<label for="ppt" class="uppercase float-left">Participants per team</label>
+						<input type="text" name="ppt" class="float-left inner" id="ppt" />
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="submit-button flex pr-10">
+			<button class="bg-gray-500 text-center font-semibold">
+				<input type="submit" value="Submit" class="uppercase" />
+			</button>
+		</div>
+
+	</form>
+</div>

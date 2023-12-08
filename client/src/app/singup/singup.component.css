@@ -137,7 +137,7 @@
 	gap: 32px;
 }
 
-.content-login .login-btn .login-submit>div {
+.content-login .login-btn .login-submit>button {
 	height: 60%;
 	width: 24%;
 	display: flex;
