@@ -7,12 +7,14 @@ import { LoginComponent } from './login/login.component';
 import { SingupComponent } from './singup/singup.component'; // Import the missing SingupComponent
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    SingupComponent // Add SingupComponent to the declarations array
+    SingupComponent,
+    HomeComponent // Add SingupComponent to the declarations array
   ],
   imports: [
     BrowserModule,
