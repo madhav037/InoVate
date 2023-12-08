@@ -1,26 +1,24 @@
-.login
-{
+.signup {
 	position: fixed;
 	top: 50%;
 	left: 50%;
 	height: 65%;
 	width: 80%;
-	transform: translate(-50%,-50%);
+	transform: translate(-50%, -50%);
 }
-.sidebar-login
-{
+
+.sidebar-login {
 	height: 100%;
 	width: 38%;
+	background-color: red;
 	background-image: url(../../assets/headway-F2KRf_QfCqw-unsplash.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
 	border-radius: 10px 0px 0px 10px;
-	
 }
-.content-login
-{
-	border-radius: 0px 10px 10px 0px;
+
+.content-login {
 	height: 100%;
 	width: 62%;
 	background-image: url(../../assets/login-background.jpg);
@@ -30,21 +28,22 @@
 	background-position: center;
 	opacity: 1;
 	padding: 3px 7px 3px 7px;
+	border-radius: 0px 10px 10px 0px;
 }
-.content-login > div
-{
+
+.content-login>div {
 	width: 100%;
 }
-.content-login .login-text
-{
+
+.content-login .login-text {
 	height: 15%;
 	font-size: 37px;
 	padding-left: 10px;
 	display: flex;
 	align-items: center;
 }
-.content-login .login-info
-{
+
+.content-login .login-info {
 	height: 7%;
 	font-size: 13px;
 	padding-left: 10px;
@@ -52,8 +51,8 @@
 	align-items: start;
 	color: grey;
 }
-.content-login .login-input
-{
+
+.content-login .login-input {
 	height: 50%;
 	margin: 2px;
 	display: flex;
@@ -61,15 +60,15 @@
 	align-items: start;
 	flex-direction: column;
 	gap: 30px;
-	padding-left: 10px;
+	padding: 20px 0px 0px 10px;
 }
-.content-login .login-input>input::placeholder
-{
+
+.content-login .login-input>input::placeholder {
 	color: black;
 }
-.content-login .login-input > input
-{
-	height: 20%;
+
+.content-login .login-input>input {
+	height: 10%;
 	width: 75%;
 	border-bottom: 1px;
 	border-color: gray;
@@ -78,12 +77,13 @@
 	color: black;
 	background-color: transparent;
 	padding: 0;
-	font-weight: 500;
-	font-size: 16px;
+	font-weight: 400;
+	font-size: 12px;
+	padding: 0px 3px;
+	text-indent: 2px;
 }
 
-.content-login .login-info .keepMeSignIn
-{
+.content-login .login-info .keepMeSignIn {
 	height: 100%;
 	display: flex;
 	align-items: center;
@@ -91,6 +91,7 @@
 	color: black;
 	font-size: 10px;
 }
+
 .content-login .login-info .checkbox-round {
 	width: 1.3em;
 	height: 1.3em;
@@ -108,46 +109,43 @@
 	background-color: rgb(23, 22, 22);
 }
 
-.content-login .login-btn
-{
+.content-login .login-btn {
 	padding-left: 10px;
 	height: 15%;
 }
-.content-login .login-btn > div
-{
+
+.content-login .login-btn>div {
 	width: 100%;
 	display: flex;
 	justify-content: end;
 	padding: 0px 20px;
 }
-.content-login .login-btn .login-ask
-{
+.content-login .login-btn .login-ask {
 	font-size: 0.6rem;
 	height: 22%;
 }
-.content-login .login-btn .login-ask a
-{
+
+.content-login .login-btn .login-ask a {
 	text-decoration: none;
 	margin-right: 10px;
 }
-.content-login .login-btn .login-submit
-{
-	height: 78%;
+.content-login .login-btn .login-submit {
+	height: 100%;
 	display: flex;
 	justify-content: end;
 	align-items: center;
 	flex-direction: row;
 	gap: 32px;
 }
-.content-login .login-btn .login-submit > div
-{
-	height: 75%;
+
+.content-login .login-btn .login-submit>div {
+	height: 60%;
 	width: 24%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
-.content-login .login-btn .login-submit>div>a
-{
+
+.content-login .login-btn .login-submit>div>a {
 	text-decoration: none;
 }
