@@ -1,5 +1,4 @@
 import mongoose from "mongoose";
-import Team from "./team.model";
 
 const eventSchema = new mongoose.Schema(
   {
@@ -15,7 +14,7 @@ const eventSchema = new mongoose.Schema(
 
     totalParticipants: { type: Number, required: true, default: 0 },
 
-    image: [{ type: String, required: true }],
+    image: { type: String, required: true },
 
     resgestrationOpen: { type: Boolean, required: true, default: true },
 
@@ -23,7 +22,9 @@ const eventSchema = new mongoose.Schema(
 
     registrationEndDate: { type: Date, required: true },
 
-    teams: [{ ref: Team }],
+    allowTeams : {type: Boolean, required: true, default: false},
+
+    limitOfMembers: {type: Number, required: true, default: 1},
 
     comments: { type: Array, default: [] },
 

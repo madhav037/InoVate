@@ -1,6 +1,7 @@
 import cookieParser from "cookie-parser";
 import express from "express";
 import authRouter from "./routes/auth.route.js";
+import eventRouter from "./routes/event.route.js";
 import bodyParser from "body-parser";
 import mongoose from "mongoose";
 import cors from "cors";
@@ -26,3 +27,4 @@ mongoose
   });
 
 app.use("/api/auth", authRouter);
+app.use("/api/event", eventRouter)
