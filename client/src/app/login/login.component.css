@@ -1,0 +1,148 @@
+.login
+{
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	height: 65%;
+	width: 80%;
+	transform: translate(-50%,-50%);
+	border-radius: 7px;
+}
+.sidebar-login
+{
+	height: 100%;
+	width: 38%;
+	background-color: red;
+	background-image: url(../../assets/headway-F2KRf_QfCqw-unsplash.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.content-login
+{
+	height: 100%;
+	width: 62%;
+	background-image: url(../../assets/login-background.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-blend-mode: color-dodge;
+	background-position: center;
+	opacity: 1;
+	padding: 3px 7px 3px 7px;
+}
+.content-login > div
+{
+	width: 100%;
+}
+.content-login .login-text
+{
+	height: 15%;
+	font-size: 37px;
+	padding-left: 10px;
+	display: flex;
+	align-items: center;
+}
+.content-login .login-info
+{
+	height: 7%;
+	font-size: 13px;
+	padding-left: 10px;
+	display: flex;
+	align-items: start;
+}
+.content-login .login-input
+{
+	height: 50%;
+	margin: 2px;
+	display: flex;
+	justify-content: center;
+	align-items: start;
+	flex-direction: column;
+	gap: 30px;
+	padding-left: 10px;
+}
+.content-login .login-input>input::placeholder
+{
+	color: black;
+}
+.content-login .login-input > input
+{
+	height: 20%;
+	width: 75%;
+	border-bottom: 1px;
+	border-color: gray;
+	border-style: solid;
+	outline: none;
+	color: black;
+	background-color: transparent;
+	padding: 0;
+	font-weight: 500;
+}
+
+.content-login .login-info .keepMeSignIn
+{
+	height: 100%;
+	display: flex;
+	align-items: center;
+	font-weight: 400;
+}
+.content-login .login-info .checkbox-round {
+	width: 1.3em;
+	height: 1.3em;
+	background-color: white;
+	border-radius: 50%;
+	vertical-align: middle;
+	border: 1px solid #ddd;
+	appearance: none;
+	-webkit-appearance: none;
+	outline: none;
+	cursor: pointer;
+}
+
+.content-login .login-info .checkbox-round:checked {
+	background-color: rgb(23, 22, 22);
+}
+
+.content-login .login-btn
+{
+	padding-left: 10px;
+	height: 15%;
+}
+.content-login .login-btn > div
+{
+	width: 100%;
+	display: flex;
+	justify-content: end;
+	padding: 0px 20px;
+}
+.content-login .login-btn .login-ask
+{
+	font-size: 0.6rem;
+	height: 22%;
+}
+.content-login .login-btn .login-ask a
+{
+	text-decoration: none;
+	margin-right: 10px;
+}
+.content-login .login-btn .login-submit
+{
+	height: 78%;
+	display: flex;
+	justify-content: end;
+	align-items: center;
+	flex-direction: row;
+	gap: 32px;
+}
+.content-login .login-btn .login-submit > div
+{
+	height: 75%;
+	width: 24%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.content-login .login-btn .login-submit>div>a
+{
+	text-decoration: none;
+}
