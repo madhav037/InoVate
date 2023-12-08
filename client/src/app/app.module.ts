@@ -15,15 +15,15 @@ import { HomeComponent } from './home/home.component';
     AppComponent,
     LoginComponent,
     SingupComponent,
-    EventformComponent, // Add SingupComponent to the declarations array
-    HomeComponent // Add SingupComponent to the declarations array
+    EventformComponent ,// Add SingupComponent to the declarations array
+    HomeComponent, // Add SingupComponent to the declarations array
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
