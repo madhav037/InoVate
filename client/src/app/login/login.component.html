@@ -4,8 +4,9 @@
     <div class="login-text"><p>Log In</p></div>
     <div class="login-info"><p>Enter mail and password</p></div>
     <div class="login-input">
-      <input type="text" placeholder="Email ID" /><input
+      <input type="text" [(ngModel)]="email" placeholder="Email ID" /><input
         type="password"
+        [(ngModel)]="password"
         placeholder="Password"
       />
     </div>
@@ -21,11 +22,17 @@
     <div class="login-btn">
       <div class="login-ask"><a href="#">Don't you have an account?</a></div>
       <div class="login-submit">
-        <div class="rounded-full bg-blue-400 text-white">
-          <a href="#">Log In</a>
+        <div
+          (click)="verifyUser()"
+          class="rounded-full hover:cursor-pointer hover:bg-blue-500 bg-blue-600 text-white"
+        >
+          <a routerLink="/home">Log In</a>
         </div>
-        <div class="rounded-full bg-blue-400 text-white">
-          <a href="#">Sign In</a>
+        <div
+          routerLink="/signup"
+          class="rounded-full hover:cursor-pointer hover:bg-blue-500 bg-blue-600 text-white"
+        >
+          <a routerLink="/signup">Sign Up</a>
         </div>
       </div>
     </div>

@@ -1,30 +1,51 @@
-<div class="container signup">
-	<div class="sidebar-login float-left"></div>
-	<div class="content-login float-left">
-		<div class="login-text">
-			<p>Sign Up</p>
-		</div>
-		<div class="login-info">
-			<p>Please fill your information below</p>
-		</div>
-		<div class="login-input">
-			<input type="text" placeholder="FULL NAME" />
-			<input type="text" placeholder="EMAIL ID" />
-			<input type="password" placeholder="PASSWORD" />
-			<input type="password" placeholder="CONFIRM PASSWORD" /></div>
+<form [formGroup]="Form" (ngSubmit)="validateForm()">
+  <div class="container signup">
+    <div class="sidebar-login float-left"></div>
+    <div class="content-login float-left">
+      <div class="login-text">
+        <p>Sign Up</p>
+      </div>
+      <div class="login-info">
+        <p>Please fill your information below</p>
+      </div>
+      <div class="login-input">
+        <input type="text" placeholder="FULL NAME" formControlName="username" />
+        <input type="email" placeholder="EMAIL ID" formControlName="email" />
+        <input
+          type="password"
+          placeholder="PASSWORD"
+          formControlName="password"
+        />
+        <input type="password" placeholder="CONFIRM PASSWORD" />
+      </div>
 
-		<div class="login-info">
-			<p class="keepMeSignIn">
-				<input type="checkbox" class="checkbox-round" id="keepMeSignIn" />
-				<label for="keepMeSignIn" style="padding-left: 3px;">I Accept terms and conditions & privacy policy</label>
-			</p>
-		</div>
-		<div class="login-btn">
-			<div class="login-ask"><a routerLink="/login">Already have an account?</a></div>
-			<div class="login-submit">
-				<div class="rounded-full bg-blue-400 text-white"><a routerLink="/signup">Sign Up</a></div>
-				<div class="rounded-full bg-blue-400 text-white"><a routerLink="/login">Log In</a></div>
-			</div>
-		</div>
-	</div>
-</div>
+      <div class="login-info">
+        <p class="keepMeSignIn">
+          <input type="checkbox" class="checkbox-round" id="keepMeSignIn" />
+          <label for="keepMeSignIn" style="padding-left: 3px"
+            >I Accept terms and conditions & privacy policy</label
+          >
+        </p>
+      </div>
+      <div class="login-btn">
+        <div class="login-ask">
+          <a routerLink="/login">Already have an account?</a>
+        </div>
+        <div class="login-submit">
+          <button
+            class="rounded-full hover:cursor-pointer hover:bg-blue-500 bg-blue-600 text-white"
+            type="submit"
+          >
+            Sign Up
+          </button>
+          <div
+            class="rounded-full hover:cursor-pointer hover:bg-blue-500 bg-blue-600 text-white"
+            routerLink="/login"
+          >
+            <a>Log In</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>

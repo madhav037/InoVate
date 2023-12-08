@@ -11,4 +11,8 @@ export class ApiAuthService {
   registerUser(user: any) {
     return this._http.post(this.url + "/auth/signin",user); 
   }
+
+  createUser(user: any) {
+    return this._http.post(this.url + "/auth/signup",user); 
+  }
 }
