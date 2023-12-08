@@ -5,6 +5,7 @@ const participantSchema = new mongoose.Schema(
     username: { type: String, required: true, unique: true },
     password: { type: String, required: true },
     email: { type: String, required: true, unique: true },
+    authenticated: { type: Boolean, default: false, required: true },
     image: {
       type: String,
       required: true,
