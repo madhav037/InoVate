@@ -9,7 +9,6 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { EventformComponent } from './eventform/eventform.component';
 import { HomeComponent } from './home/home.component';
-import { SidebarComponent } from './sidebar/sidebar.component';
 
 @NgModule({
   declarations: [
@@ -17,14 +16,14 @@ import { SidebarComponent } from './sidebar/sidebar.component';
     LoginComponent,
     SingupComponent,
     EventformComponent ,// Add SingupComponent to the declarations array
-    HomeComponent, SidebarComponent, // Add SingupComponent to the declarations array
+    HomeComponent, // Add SingupComponent to the declarations array
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    ReactiveFormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

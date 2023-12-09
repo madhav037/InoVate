@@ -105,3 +105,49 @@ input[type="file"] {
 	align-items: center;
 	justify-content: start;
 }
+
+.togg {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	align-items: start;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+
+.togg>div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	width: 32%;
+}
+
+.togg>button {
+	padding-left: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	height: 85%;
+	width: 20%;
+	border-radius: 20px;
+	padding: 2px;
+}
+
+.togg>.btn1 {
+	justify-content: flex-start;
+}
+
+.togg>.btn2 {
+	justify-content: flex-end;
+}
+
+.togg>button .togg-btn {
+	position: relative;
+	border-radius: 50%;
+	height: 90%;
+	width: 37%;
+	background: black;
+	margin: 0px 3px 0px 3px;
+	transition: 1s;
+}

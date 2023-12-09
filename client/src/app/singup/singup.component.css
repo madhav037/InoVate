@@ -81,6 +81,12 @@
 	padding: 0px 3px;
 	text-indent: 2px;
 }
+.content-login .login-input img
+{
+	height: 100%;
+	width: 100%;
+	
+}
 
 .content-login .login-info .keepMeSignIn {
 	height: 100%;
