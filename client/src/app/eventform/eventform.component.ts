@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { ApiEventService } from '../api-event.service';
 
 @Component({
   selector: 'app-eventform',
@@ -7,6 +8,9 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
   styleUrl: './eventform.component.css'
 })
 export class EventformComponent {
+
+  constructor(private _api:ApiEventService) { }
+
   eventForm:FormGroup=new FormGroup({
     event_name:new FormControl('',[Validators.required,Validators.max(20)]),
     event_image:new FormControl('',[Validators.required]),
@@ -23,8 +27,15 @@ export class EventformComponent {
   setEvent()
   {
     console.log(this.eventForm.value);
+    this.createEventt(this.eventForm.value);
   }
   
+  async createEventt(event: any) {
+    console.log(event)
+    this._api.createEvent(event).subscribe((res: any) => {
+      console.log(res);
+    })    
+  }
 
   //toggle code for team allow
   isTeam=true;

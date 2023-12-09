@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { ApiAuthService } from '../api-auth.service';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-singup',
@@ -8,7 +9,7 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
   styleUrl: './singup.component.css'
 })
 export class SingupComponent {
-  constructor(private _api: ApiAuthService) { }
+  constructor(private _api: ApiAuthService,private _router:Router) { }
   
   
   Form: FormGroup = new FormGroup({
@@ -24,7 +25,9 @@ export class SingupComponent {
     this._api.createUser(this.Form.value)
       .subscribe((res) => {
         console.log(res);
+        this._router.navigate(['/home']);
       }
+        
       )
   }
   validateForm() { 

@@ -37,8 +37,8 @@
           Ongoing Event
           <hr class="h-0.5 w-20 mx-auto m-2 bg-black" />
         </div>
-        <div class="flex justify-around flex-wrap flex-row">
-          <div *ngFor="let s of filter">
+        <div class="flex justify-start flex-wrap flex-row">
+          <div *ngFor="let s of ongoin" class="m-2">
             <img
               src="{{ s.image }}"
               class="w-[350px] rounded-t-lg h-28 object-cover"
@@ -46,7 +46,7 @@
             />
             <div class="w-[350px] p-3 text-start h-64 bg-[#D9D9D9]">
               <h1 class="text-4xl">{{ s.title }}</h1>
-              <p class="">
+              <p class="text-[rgba(0,0,0,0.8)]">
                 {{ s.description }}
               </p>
               <div
@@ -65,8 +65,8 @@
           Open Event
           <hr class="h-0.5 w-20 mx-auto m-2 bg-black" />
         </div>
-        <div class="flex justify-around flex-wrap my-2 flex-row">
-          <div *ngFor="let d of filter" class="">
+        <div class="flex justify-start flex-wrap my-2 flex-row">
+          <div *ngFor="let d of open" class="m-2">
             <img
               src="../../assets/upcoming-1.png"
               class="w-[300px] rounded-t-lg h-28"

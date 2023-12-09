@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { ApiAuthService } from '../api-auth.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -11,8 +12,10 @@ export class LoginComponent {
   email: string = "";
   password: string = "";
 
-  constructor(private _api: ApiAuthService) { }
-  
+  constructor(private _api: ApiAuthService,private _router:Router) { }
+  redirect() {
+    this._router.navigate(['/home']);
+  }
   verifyUser() {
     let user = {
       email: this.email,
@@ -23,6 +26,7 @@ export class LoginComponent {
         console.log("User registered successfully!")
         this.email = "";
         this.password = "";
+        this.redirect();
       });
   }
 }

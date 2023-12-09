@@ -1,4 +1,4 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
 @Injectable({
@@ -12,5 +12,25 @@ export class ApiEventService {
   
   getAll() {
     return this._http.get(this.url+"/event/get-all-events")
+  }
+
+  updateEvent(event: any) {
+    const httpOptions = {
+      headers: new HttpHeaders({
+        'Content-Type': 'application/json',
+      }),
+      withCredentials: true
+    };
+    return this._http.put(this.url+`/event/update-event/${event._id}`,event, httpOptions)
+  }
+
+  createEvent(event: any) {
+    const httpOptions = {
+      headers: new HttpHeaders({
+        'Content-Type': 'application/json',
+      }),
+      withCredentials: true
+    };
+    return this._http.post(this.url+"/event/create-event",event, httpOptions)
   }
 }

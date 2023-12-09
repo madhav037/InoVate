@@ -13,7 +13,12 @@ app.listen(3000, () => {
 });
 
 app.use(bodyParser.json());
-app.use(cors());
+app.use(
+  cors({
+    origin: "http://localhost:4200",
+    credentials: true,
+  })
+);
 app.use(cookieParser());
 
 mongoose
@@ -28,5 +33,5 @@ mongoose
   });
 
 app.use("/api/auth", authRouter);
-app.use("/api/event", eventRouter)
-app.use("/api/user", userRouter)
+app.use("/api/event", eventRouter);
+app.use("/api/user", userRouter);
