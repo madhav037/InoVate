@@ -63,6 +63,34 @@ export const getUser = async (req, res, next) => {
 }
 
 export const updateUser = async (req, res, next) => {
-    const { userId } = req.params;
+    const { userId } = req.params.userId;
+    const { username, email, password, role, authenticated, image, eventsParticipatd, eventsOrganized } = req.body;
     
+    try {
+        const user = new User.findByIdAndUpdate(userId, {
+            username,
+            email,
+            password,
+            role,
+            authenticated,
+            image,
+            eventsParticipatd,
+            eventsOrganized
+        }, { new: true })
+        if (!user) return res.status(404).json({ message: "User not found" })
+        res.status(200).json(user)
+    } catch (error) {
+        next(error)
+    } 
+}
+
+export const deleteUser = async (req, res, next) => {
+    const { userId } = req.params;
+    try {
+        const deletedUser = await User.findByIdAndDelete(userId)
+        if (!deletedUser) return res.status(404).json({ message: "User not found" })
+        res.status(200).json(deletedUser)
+    } catch (error) {
+        next(error)
+    }
 }
