@@ -9,7 +9,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { EventformComponent } from './eventform/eventform.component';
 import { HomeComponent } from './home/home.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
-import { NavbarComponent } from './navbar/navbar.component';
+import { NavComponent } from './nav/nav.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +19,7 @@ import { NavbarComponent } from './navbar/navbar.component';
     EventformComponent ,
     HomeComponent,
     SidebarComponent,
-    NavbarComponent,
+    NavComponent,
   ],
   imports: [
     BrowserModule,
