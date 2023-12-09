@@ -1,0 +1,25 @@
+<div class="userprofile">
+	<div class="nav">
+		<app-navbar></app-navbar>
+	</div>
+	<div class="imgdiv">
+		<div class="w-full h-1/2 bg-slate-500 im">
+		</div>
+		<img src="../../assets/headway-F2KRf_QfCqw-unsplash.jpg" alt="" class="relative">
+		<div class="w-full h-1/2"></div>
+	</div>
+	<div class="nav formdiv">
+		<div class="innerformdiv">
+			<form [formGroup]="profileForm" (ngSubmit)="setProfile()">
+				<div><input type="text" placeholder="USER NAME" formControlName="username"/></div>
+				<div><input type="text" placeholder="USER EMAIL" formControlName="email"/></div>
+				<div><input type="password" placeholder="USER PASSWORD" formControlName="password"/></div>
+				<div>
+					<button>
+						<input type="submit" class="submitClass uppercase" value="Update Profile" />
+					</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>

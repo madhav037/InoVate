@@ -10,6 +10,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { EventformComponent } from './eventform/eventform.component';
 import { HomeComponent } from './home/home.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
+import { UserprofileComponent } from './userprofile/userprofile.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { DetailedeventComponent } from './detailedevent/detailedevent.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +20,7 @@ import { SidebarComponent } from './sidebar/sidebar.component';
     LoginComponent,
     SingupComponent,
     EventformComponent ,// Add SingupComponent to the declarations array
-    HomeComponent, SidebarComponent, // Add SingupComponent to the declarations array
+    HomeComponent, SidebarComponent, UserprofileComponent, NavbarComponent, DetailedeventComponent, // Add SingupComponent to the declarations array
   ],
   imports: [
     BrowserModule,
