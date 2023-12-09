@@ -1,0 +1,73 @@
+.navbar>div
+{
+	float: left;
+}
+
+.logo
+{
+	height: 100%;
+	width: 15%;
+	padding: 3px;
+}
+.logo img
+{
+	margin-right: 20px;
+	height: 100%;
+	width: 100%;
+	object-fit: contain;
+}
+.menu
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	height: 100%;
+	width: 55%;
+	padding-left: 40px;
+	gap: 40px;
+}
+.search
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	height: 100%;
+	width: 18%;
+	gap: 10px;
+}
+.search input 
+{
+	border: 1px solid black;
+	outline: none;
+	text-indent: 10px;
+	border-radius: 20px;
+	height: 50%;
+	width: 80%;
+	margin-right: 3px;
+}
+.user
+{
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-direction: row;
+	height: 100%;
+	width: 12%;
+	padding: 2px;
+}
+.user > .user-logo
+{
+	height: 59%;
+	width: 26%;
+	object-fit: cover;
+}
+.user>img:first-child
+{
+	border-radius: 50% 50%;
+}
+input::placeholder
+{
+	color: black;
+}

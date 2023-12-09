@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { SingupComponent } from './singup/singup.component'; // Import the missing SingupComponent
@@ -18,11 +17,11 @@ import { SidebarComponent } from './sidebar/sidebar.component';
     SingupComponent,
     EventformComponent ,// Add SingupComponent to the declarations array
     HomeComponent,
-    SidebarComponent// Add SingupComponent to the declarations array
+    SidebarComponent,// Add SingupComponent to the declarations array
+    HomeComponent, SidebarComponent, // Add SingupComponent to the declarations array
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
     FormsModule,
     HttpClientModule,
     ReactiveFormsModule
