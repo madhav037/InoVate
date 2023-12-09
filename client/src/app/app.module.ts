@@ -9,8 +9,6 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { EventformComponent } from './eventform/eventform.component';
 import { HomeComponent } from './home/home.component';
-import { NavbarComponent } from './navbar/navbar.component';
-import { UserProfileComponent } from './user-profile/user-profile.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +16,7 @@ import { UserProfileComponent } from './user-profile/user-profile.component';
     LoginComponent,
     SingupComponent,
     EventformComponent ,// Add SingupComponent to the declarations array
-    HomeComponent, NavbarComponent, UserProfileComponent, // Add SingupComponent to the declarations array
+    HomeComponent, // Add SingupComponent to the declarations array
   ],
   imports: [
     BrowserModule,

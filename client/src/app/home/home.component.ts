@@ -10,13 +10,21 @@ export class HomeComponent {
 
   constructor(private _api: ApiEventService) {
   }
-
-  data:any=[]
+  search: string = ''
+  data: any = []
+  filter: any = []
   ngOnInit() {
     this._api.getAll().subscribe((res: any) => {
       this.data = res
-      console.log(this.data[0].title)
+      this.filter = res
+      console.log(this.data)
     })
     
+  }
+  searchEvent() {
+    this.filter = this.data.filter((res: any) => {
+      console.log(res)
+      return res.title.toLocaleLowerCase().match(this.search.toLocaleLowerCase())
+    })
   }
 }
